@@ -1,5 +1,6 @@
 import Stories from "./pages/stories.js"
 import Item from "./pages/item.js"
+import Comments from "./pages/comments.js"
 
 const router = new Navigo(null, true, '#');
 
@@ -13,7 +14,7 @@ export default class RouterHandler {
             { path: '/', page: Stories },
             { path: '/news', page: Stories },
             { path: '/newest', page: Stories },
-            { path: '/newcomments', page: Stories },
+            { path: '/newcomments', page: Comments },
             { path: '/ask', page: Stories },
             { path: '/show', page: Stories },
             { path: '/jobs', page: Stories },

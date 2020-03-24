@@ -18,5 +18,5 @@ export default function Story(story) {
                     </a>
                 </div>
             </div>
-        </>`
+        </div>`
 }
