@@ -23,7 +23,7 @@ export default async function Item() {
                 ${Story(story)}
             </div>
             <hr/>
-            ${hasComments && story.comments.map(comment => Comment(comment)).join('')}
+            ${hasComments ? story.comments.map(comment => Comment(comment)).join('') : "No comments."}
             `
      }
 }

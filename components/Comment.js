@@ -5,6 +5,7 @@ export default function Comment(comment) {
     return `
     <div class="nested-comments-${comment.level}">
         <p class="comment-header">
+            <img src="https://news.ycombinator.com/grayarrow.gif">
             ${comment.user} ${comment.time_ago}
         </p>
         ${comment.content}

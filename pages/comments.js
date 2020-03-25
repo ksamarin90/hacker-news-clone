@@ -3,19 +3,17 @@ import baseUrl from "../utils/baseUrl.js"
 
 export default async function Comments() {
     const comments = await getComments();
-    view.innerHTML = comments.map((comment) => {
-        `<div class="story">
-            <div>
-                <span class="upvote">▲</span>
-                <span>${comment.content}</span>
+    view.innerHTML = comments.map((comment) => 
+        `<div>
+            <div class="comment-icon-author">
+                <img src="https://news.ycombinator.com/grayarrow.gif">
+                <span class="gray middle-font">${comment.user}</span>
             </div>
-            <div>
-                <div class="gray">
-                    
-                </div>
+            <div class="comment-content">
+                ${comment.content}
             </div>
         </div>`
-    }).join('');
+    ).join('')
 }
 
 async function getComments() {

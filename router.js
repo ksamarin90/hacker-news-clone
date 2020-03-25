@@ -1,6 +1,8 @@
 import Stories from "./pages/stories.js"
 import Item from "./pages/item.js"
 import Comments from "./pages/comments.js"
+import Jobs from "./pages/jobs.js"
+import Login from "./pages/login.js"
 
 const router = new Navigo(null, true, '#');
 
@@ -15,10 +17,10 @@ export default class RouterHandler {
             { path: '/news', page: Stories },
             { path: '/newest', page: Stories },
             { path: '/newcomments', page: Comments },
-            { path: '/ask', page: Stories },
             { path: '/show', page: Stories },
-            { path: '/jobs', page: Stories },
-            { path: '/item', page: Item }
+            { path: '/jobs', page: Jobs },
+            { path: '/item', page: Item },
+            { path: '/login', page: Login }
         ];
 
         routes.forEach(route => {
